@@ -2,7 +2,7 @@
     "name": "mecanik/zfturbo",
     "type": "library",
     "version": "1.0.0",
-    "description": "Zend Framework 3 Speed Optimiser Module",
+    "description": "Zend Framework 3 Speed Optimization Module",
     "keywords": ["zend-framework3","zend 3 minifier","zend 3 speed module", "zend 3 speed optimization module", "zend 3 optimiser"],
     "homepage": "https://github.com/Mecanik/ZF3Turbo",
     "license": "Apache-2.0",

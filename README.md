@@ -1,4 +1,4 @@
-# ZF3Turbo - Zend Framework 3 Speed Optimiser Module
+# ZF3Turbo - Zend Framework 3 Speed Optimization Module
  [![Latest Stable Version](https://poser.pugx.org/mecanik/zf3turbo/v/stable)](https://packagist.org/packages/mecanik/zf3turbo)
  [![License](https://poser.pugx.org/mecanik/zf3turbo/license)](https://packagist.org/packages/mecanik/zf3turbo)
  [![Total Downloads](https://poser.pugx.org/mecanik/zf3turbo/downloads)](https://packagist.org/packages/mecanik/zf3turbo)
