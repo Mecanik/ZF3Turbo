@@ -17,7 +17,7 @@ class ZF3TurboCSSEngine
     {
     }
 
-    public function minify_css_callback($matches)
+    public static function minify_css_callback($matches)
 	{
         //print_r($matches);
 
@@ -37,7 +37,7 @@ class ZF3TurboCSSEngine
 		return "{$openStyleTag}{$css}</style>";
     }
 
-    protected function removeComments($data)
+    protected static function removeComments($data)
     {
         if (false !== strpos($data, '/*')) {
             $data = str_replace("/*","_COMSTART",$data);
@@ -48,7 +48,7 @@ class ZF3TurboCSSEngine
         return $data;
     }
 
-    protected function removeCdata($data)
+    protected static function removeCdata($data)
 	{
 		if (false !== strpos($data, '<![CDATA[')) {
 			$data = str_replace('//<![CDATA[', '', $data);
@@ -62,7 +62,7 @@ class ZF3TurboCSSEngine
 		return $data;
     }
     
-    protected function removeSpaces($data)
+    protected static function removeSpaces($data)
     {
         $data = preg_replace("/\s+/u", " ", $data);
         $data = str_replace(' ', '', $data);

@@ -17,7 +17,7 @@ class ZF3TurboJSEngine
     {
     }
 
-    public function minify_js_callback($matches)
+    public static function minify_js_callback($matches)
 	{
 
         $openScriptTag = "<script{$matches[2]}";
@@ -32,14 +32,14 @@ class ZF3TurboJSEngine
 		return "{$openScriptTag}{$js}</script>";
     }
 
-    protected function removeComments($data)
+    protected static function removeComments($data)
     {
         $data = preg_replace('/(?:(?:\/\*(?:[^*]|(?:\*+[^*\/]))*\*+\/)|(?:(?<!\:|\\\\\|\')\/\/.*))/u', '', $data);
 
         return $data;
     }
 
-    protected function removeSpaces($data)
+    protected static function removeSpaces($data)
     {    
         // remove whitespace from start - end
         $data = trim($data);
