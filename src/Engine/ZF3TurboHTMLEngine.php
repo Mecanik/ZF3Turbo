@@ -17,7 +17,7 @@ class ZF3TurboHTMLEngine
     {
     }
 
-    public function remove_comments_callback($matches)
+    public static function remove_comments_callback($matches)
 	{
 		return (0 === strpos($matches[1], '[') || false !== strpos($matches[1], '<![')) ? $matches[0] : '';
     }
