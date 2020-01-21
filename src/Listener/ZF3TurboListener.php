@@ -38,6 +38,11 @@ class ZF3TurboListener implements ListenerAggregateInterface
             return;
         }
 
+		// Do not execute anything in console mode, since there is no need to.
+		if (php_sapi_name() == "cli") {
+            return;
+        }
+			
         $this->listeners[] = $events->attach('route', [$this, 'onRoute'], $priority);
         $this->listeners[] = $events->attach('finish', [$this, 'onFinish'], $priority);
     }
@@ -53,12 +58,7 @@ class ZF3TurboListener implements ListenerAggregateInterface
     public function onRoute(EventInterface $event)
     {
         if($this->config['engine_options']['ssl']['enabled'])
-        {
-            if (php_sapi_name() == "cli") {
-                // Do not execute HTTPS redirect in console mode.
-                return;
-            }
-            
+        {          
             // Get request URI
             $uri = $event->getRequest()->getUri();
             $scheme = $uri->getScheme();
