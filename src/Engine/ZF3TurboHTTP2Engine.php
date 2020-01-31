@@ -50,7 +50,7 @@ class ZF3TurboHTTP2Engine
 
 	public function build_css()
 	{
-		preg_match_all('/<link.*?href=["\']+(.*?)["\']+/im', $this->content, $matches, PREG_SET_ORDER, 0);
+		preg_match_all('/<link rel="stylesheet".*?href=["\']+(.*?)["\']+/im', $this->content, $matches, PREG_SET_ORDER, 0);
 		
 		foreach($matches as $mm)
 		{
