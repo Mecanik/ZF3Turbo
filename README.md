@@ -2,7 +2,16 @@
  [![Latest Stable Version](https://poser.pugx.org/mecanik/zf3turbo/v/stable)](https://packagist.org/packages/mecanik/zf3turbo)
  [![License](https://poser.pugx.org/mecanik/zf3turbo/license)](https://packagist.org/packages/mecanik/zf3turbo)
  [![Total Downloads](https://poser.pugx.org/mecanik/zf3turbo/downloads)](https://packagist.org/packages/mecanik/zf3turbo)
- 
+
+------------
+```diff
+! Zend Framework is now Laminas.
+! Please use my other package called Laminas Turbo Speed for Laminas project which is up to date.
+```
+### Zend Framework is now Laminas: [https://www.zend.com/blog/evolution-zend-framework-laminas-project](https://www.zend.com/blog/evolution-zend-framework-laminas-project)
+### Laminas Turbo Speed: [https://github.com/Mecanik/laminas-turbo-speed](https://github.com/Mecanik/laminas-turbo-speed)
+------------
+
 Description
 ------------
 Module to supercharge your website performance by minifying/compressing HTML, inline content and pushing assets via HTTP/2. This module works for HTML5 type for now, do not use with XHTML.
